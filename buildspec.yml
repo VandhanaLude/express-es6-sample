@@ -3,15 +3,16 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 14  # Specify your Node.js version
+      nodejs: 14 # Specify your Node.js version
     commands:
-      - npm install  # Install dependencies
+      - npm install # Install dependencies
   build:
     commands:
-      - npm run build  # Add your build command here if you have one (optional)
-  test:  # Adding the test phase
-    commands:  
-      - npm run test 
+      - npm run build # Add your build command here if you have one (optional)
+  
+  test: # Adding the test phase
+    commands:
+      - npm run test
 artifacts:
   files:
-    - '**/*'  # Include all files to be packaged for deployment
+    - "**/*" # Include all files to be packaged for deployment
