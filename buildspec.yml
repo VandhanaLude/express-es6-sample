@@ -9,7 +9,9 @@ phases:
   build:
     commands:
       - npm run build  # Add your build command here if you have one (optional)
-
+  test:  # Adding the test phase
+    commands:  
+      - npm run test 
 artifacts:
   files:
     - '**/*'  # Include all files to be packaged for deployment
